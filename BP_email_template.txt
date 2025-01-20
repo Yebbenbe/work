@@ -67,17 +67,19 @@
 <hr />
 <p>built-in button:&nbsp;<a class="simple-button-plugin" href="{{.URL}}" style="display: inline-block; background-color: rgb(39, 174, 97); border: 1px solid rgb(39, 174, 97); padding: 1px; border-radius: 5px; font-size: 14px; cursor: pointer; color: rgb(255, 255, 255) !important; text-decoration: none !important;" target="_blank">1pt Padding, blank</a>&nbsp;</p>
 
-<p>built- in&nbsp;&nbsp;<a class="simple-button-plugin" href="{{.URL}}" style="display:inline-block;background-color:#27AE61;border:1px solid #27AE61;color:#fff !important;padding:5px 10px;border-radius:5px;font-size:14px;text-decoration: none !important; cursor: pointer;" target="_self">default pad, self</a></p>
 
-<p>&quot;regular&quot; button:     <a href="your-link" class="outlook-button">Click Me</a>  &nbsp;</p>
-<p> VML button (old outlook):
-<v:roundrect arcsize="10%" fillcolor="#27AE61" href="{{.URL}}" stroke="f" strokecolor="#27AE61" style="width:200px;v-text-anchor:middle;height:40px;w:anchorx:50%;w:anchory:50%;" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word">
-  <v:textbox style="mso-fit-shape-to-text:true">
-    <div style="color:#fff;font-size:14px;font-family:sans-serif;text-align:center; padding:8px 16px;">
-      Go to Training
-    </div>
-  </v:textbox>
-</v:roundrect>
+<p>&quot;regular&quot; button:     <a href="{{.URL}}" class="outlook-button">Click Me</a>  &nbsp;</p>
+
+
+
+<p>old button 2:&nbsp;</p><p>
+<v:roundrect arcsize="10%" fillcolor="#27AE61" href="{{.URL}}" stroke="f" strokecolor="#27AE61" style="width:200px;v-text-anchor:middle;height:40px;w:anchorx:50%;w:anchory:50%;" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"> &nbsp; <v:textbox style="mso-fit-shape-to-text:true"> &nbsp; &nbsp;
+<div style="color:#fff;font-size:14px; font-family:sans-serif;text-align:center; padding:8px 16px;">&nbsp; &nbsp; &nbsp; Go to Training &nbsp; &nbsp;</div>
+&nbsp; </v:textbox> </v:roundrect></p>
+
+
+
+
 </p>
 <p>modern outlook 
   <a class="simple-button-plugin" href="{{.URL}}" style="display: inline-block; background-color: rgb(39, 174, 97); border: 1px solid rgb(39, 174, 97); padding: 5px 10px; border-radius: 10px; font-size: 14px; cursor: pointer; color: rgb(255, 255, 255) !important; text-decoration: none !important;" target="_self">
