@@ -17,27 +17,11 @@
 <p><!--[if !mso]><p>It NOT MSO </p><![endif]--></p>
 
 
-<!-- Old button for MSO (for older Outlook clients) -->
-<p>old button:</p>
-<!--[if mso]>
-<v:roundrect arcsize="10%" fillcolor="#27AE61" href="{{.URL}}" stroke="f" strokecolor="#27AE61" style="width:200px; v-text-anchor:middle; height:40px; w:anchorx:50%; w:anchory:50%;" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word">
-  <v:textbox style="mso-fit-shape-to-text:true">
-    <div style="color:#fff; font-size:14px; font-family:sans-serif; text-align:center; padding:8px 16px;">
-      Go to Training
-    </div>
-  </v:textbox>
-</v:roundrect>
-<![endif]-->
-
-<!-- Newer Outlook clients and non-Outlook -->
-<!--[if !mso]>
-<p>It looks like you're using a newer version of Outlook (2019/365) or another email client, which should support standard buttons.</p>
-<p>New button for modern Outlook:</p>
-<a class="simple-button-plugin" href="{{.URL}}" style="display: inline-block; background-color: rgb(39, 174, 97); border-radius: 5px; font-size: 14px; cursor: pointer; color: rgb(255, 255, 255) !important; text-decoration: none !important;" target="_blank">
-  Go to Training
-</a>
-<![endif]-->
-
 
 </body>
 </html>
+
+
+THIS does seem to work : <p><!--[if mso]>
+        <p>It looks like you're using an older version of Outlook, and buttons may not display correctly. Please click <a href="your-link">here</a> instead.</p>
+    <![endif]--></p>
