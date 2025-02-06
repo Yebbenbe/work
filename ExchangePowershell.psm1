@@ -1,13 +1,22 @@
+# PS is: Dynamically typed
+
 # Connecting
 Connect-ExchangeOnline -UserPrincipalName youradmin@domain.com
 
-# Connecting but wayyy worse
-$UserCredential = Get-Credential
-Connect-ExchangeOnline -UserPrincipalName $UserCredential.UserName -ShowProgress $true
-
 # Print a variable (like an array of objects)
-$variable
+$mysteryVariable.GetType
 
+# Creating data types
+$singleValue = "Hello, World!"  # string
+$array = @("Item1", "Item2", "Item3") # Array of strings
+$object = [PSCustomObject]@{Name="John"; Age=30}  # This is a custom object
+$arrayOfObjects = @(   
+    [PSCustomObject]@{Name="John"; Age=30},
+    [PSCustomObject]@{Name="Jane"; Age=25}
+)  
+
+# Getting data type
+$mystery
 # Print an array of objects formatted as a list
 $variable | Format-List
 
