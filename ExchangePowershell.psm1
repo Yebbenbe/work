@@ -33,7 +33,7 @@ $filteredUsers = $users | Where-Object {
     -not ($excludedDomains -contains $userDomain)
 }
 
-# Print
+# Printing the addresses of above
 $filteredUsers.UserPrincipalName
 
 # Get a mailbox config
