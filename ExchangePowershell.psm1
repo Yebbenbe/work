@@ -1,6 +1,10 @@
 # Connecting
 Connect-ExchangeOnline -UserPrincipalName youradmin@domain.com
 
+# Connecting but wayyy worse
+$UserCredential = Get-Credential
+Connect-ExchangeOnline -UserPrincipalName $UserCredential.UserName -ShowProgress $true
+
 # Get users 
 $users = Get-Mailbox -ResultSize Unlimited
 
@@ -13,3 +17,15 @@ $filteredUsers = $users | Where-Object {
 
 # Print
 $filteredUsers.UserPrincipalName
+
+# Get a mailbox config
+Get-MailboxRegionalConfiguration -Identity "some@domain.ca"
+
+# See it as a list
+Get-MailboxRegionalConfiguration -Identity "some@domain.ca" | Format-List
+
+# Get a list of mailbox properties 
+Get-MailboxRegionalConfiguration -Identity "some@domain.ca" | Get-Member
+
+# Set a mailbox config
+Set-MailboxRegionalConfiguration -Identity "some@domain.ca" -TimeZone "Atlantic Standard Time"
