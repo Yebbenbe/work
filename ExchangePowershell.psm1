@@ -5,6 +5,15 @@ Connect-ExchangeOnline -UserPrincipalName youradmin@domain.com
 $UserCredential = Get-Credential
 Connect-ExchangeOnline -UserPrincipalName $UserCredential.UserName -ShowProgress $true
 
+# Print a variable (like an array of objects)
+$variable
+
+# Print an array of objects formatted as a list
+$variable | Format-List
+
+# Get attributes from an arrray of objects
+$someArray | Get-Member
+
 # Get users 
 $users = Get-Mailbox -ResultSize Unlimited
 
