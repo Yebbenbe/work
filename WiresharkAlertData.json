@@ -1,0 +1,26 @@
+{
+  "attributes": {
+    "Comments": "Wireshark 4.2.6 x64",
+    "DisplayIcon": "C:\\Program Files\\Wireshark\\Wireshark.exe,0",
+    "DisplayName": "Wireshark 4.2.6 x64",
+    "DisplayVersion": "4.2.6",
+    "EstimatedSize": 238958,
+    "HelpLink": "https://ask.wireshark.org/",
+    "InstallLocation": "C:\\Program Files\\Wireshark",
+    "NoModify": 1,
+    "NoRepair": 1,
+    "_comment": "above attributes determnine whether app shows the modify/repair buttons in Add/Remove Programs.
+    "Publisher": "The Wireshark developer community, https://www.wireshark.org",
+    "QuietUninstallString": "\"C:\\Program Files\\Wireshark\\uninstall-wireshark.exe\" /S",
+    "URLInfoAbout": "https://www.wireshark.org",
+    "URLUpdateInfo": "https://www.wireshark.org/download.html",
+    "UninstallString": "\"C:\\Program Files\\Wireshark\\uninstall-wireshark.exe\"",
+    "VersionMajor": 4,
+    "VersionMinor": 2,
+    "category": "Packing Sniffing Tools",
+    "description": "Wireshark Protocol Analyzer",
+    "detection": "Found in installed programs list",
+    "username": "NT AUTHORITY\\SYSTEM"
+  },
+  "type": "SuspiciousTool"
+}
